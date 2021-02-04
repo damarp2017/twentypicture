@@ -42,20 +42,16 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <!-- Logo -->
-            <a class="logo" href="index.html"> <img src="{{ asset('onepage-slider/img/logo-light.png') }}" alt=""> </a>
+            <a class="logo" href="{{ route('home') }}"> <img src="{{ asset('onepage-slider/img/logo-light.png') }}"
+                    alt=""> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
                     class="icon-bar"><i class="ti-line-double"></i></span> </button>
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"> <a class="nav-link active" href="#" data-scroll-nav="0">Home</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1">About</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">Services</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3">Portfolio</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="4">Pricing</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="5">Blog</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="6">Contact</a> </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{{ route('home') }}">Home</a> </li>
                 </ul>
             </div>
         </div>
@@ -86,9 +82,11 @@
                     <div class="owl-carousel owl-theme text-center">
                         <div class="item">
                             <div class="gallery-item-inner">
-                                <a href="{{  asset('img/services/10.jpg') }}" title="" class="img-grayscale img-zoom">
+                                <a href="{{  asset('onepage-slider/img/services/10.jpg') }}" title=""
+                                    class="img-grayscale img-zoom">
                                     <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="{{  asset('img/services/10.jpg') }}"
+                                        <div class="gallery-img"> <img
+                                                src="{{  asset('onepage-slider/img/services/10.jpg') }}"
                                                 class="img-fluid mx-auto d-block" alt=""> </div>
                                     </div>
                                 </a>
@@ -96,9 +94,11 @@
                         </div>
                         <div class="item">
                             <div class="gallery-item-inner">
-                                <a href="{{  asset('img/services/10.jpg') }}" title="" class="img-grayscale img-zoom">
+                                <a href="{{  asset('onepage-slider/img/services/10.jpg') }}" title=""
+                                    class="img-grayscale img-zoom">
                                     <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="{{  asset('img/services/11.jpg') }}"
+                                        <div class="gallery-img"> <img
+                                                src="{{  asset('onepage-slider/img/services/11.jpg') }}"
                                                 class="img-fluid mx-auto d-block" alt=""> </div>
                                     </div>
                                 </a>
@@ -106,9 +106,11 @@
                         </div>
                         <div class="item">
                             <div class="gallery-item-inner">
-                                <a href="{{  asset('img/services/12.jpg') }}" title="" class="img-grayscale img-zoom">
+                                <a href="{{  asset('onepage-slider/img/services/12.jpg') }}" title=""
+                                    class="img-grayscale img-zoom">
                                     <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="{{  asset('img/services/12.jpg') }}"
+                                        <div class="gallery-img"> <img
+                                                src="{{  asset('onepage-slider/img/services/12.jpg') }}"
                                                 class="img-fluid mx-auto d-block" alt=""> </div>
                                     </div>
                                 </a>
