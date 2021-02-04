@@ -129,60 +129,60 @@
                             <div class="position-re o-hidden img-grayscale item-inner"> <img
                                     src="{{ asset('onepage-slider/img/services/1.jpg') }}" alt=""> </div>
                             <div class="con"> <span class="category">
-                                    <a href="services-page.html">Wedding</a>
+                                    <a href="{{ route('service') }}">Wedding</a>
                                 </span>
-                                <h5><a href="services-page.html">Photography</a></h5> <a href="services-page.html"><i
-                                        class="ti-arrow-right"></i></a>
+                                <h5><a href="{{ route('service') }}">Photography</a></h5> <a
+                                    href="{{ route('service') }}"><i class="ti-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="position-re o-hidden img-grayscale item-inner"> <img
                                     src="{{ asset('onepage-slider/img/services/2.jpg') }}" alt=""> </div>
                             <div class="con"> <span class="category">
-                                    <a href="services-page.html">Portrait</a>
+                                    <a href="{{ route('service') }}">Portrait</a>
                                 </span>
-                                <h5><a href="services-page.html">Photography</a></h5> <a href="services-page.html"><i
-                                        class="ti-arrow-right"></i></a>
+                                <h5><a href="{{ route('service') }}">Photography</a></h5> <a
+                                    href="{{ route('service') }}"><i class="ti-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="position-re o-hidden img-grayscale item-inner"> <img
                                     src="{{ asset('onepage-slider/img/services/3.jpg') }}" alt=""> </div>
                             <div class="con"> <span class="category">
-                                    <a href="services-page.html">Travel</a>
+                                    <a href="{{ route('service') }}">Travel</a>
                                 </span>
-                                <h5><a href="services-page.html">Photography</a></h5> <a href="services-page.html"><i
-                                        class="ti-arrow-right"></i></a>
+                                <h5><a href="{{ route('service') }}">Photography</a></h5> <a
+                                    href="{{ route('service') }}"><i class="ti-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="position-re o-hidden img-grayscale item-inner"> <img
                                     src="{{ asset('onepage-slider/img/services/4.jpg') }}" alt=""> </div>
                             <div class="con"> <span class="category">
-                                    <a href="services-page.html">Still Life</a>
+                                    <a href="{{ route('service') }}">Still Life</a>
                                 </span>
-                                <h5><a href="services-page.html">Photography</a></h5> <a href="services-page.html"><i
-                                        class="ti-arrow-right"></i></a>
+                                <h5><a href="{{ route('service') }}">Photography</a></h5> <a
+                                    href="{{ route('service') }}"><i class="ti-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="position-re o-hidden img-grayscale item-inner"> <img
                                     src="{{ asset('onepage-slider/img/services/5.jpg') }}" alt=""> </div>
                             <div class="con"> <span class="category">
-                                    <a href="services-page.html">Fashion</a>
+                                    <a href="{{ route('service') }}">Fashion</a>
                                 </span>
-                                <h5><a href="services-page.html">Photography</a></h5> <a href="services-page.html"><i
-                                        class="ti-arrow-right"></i></a>
+                                <h5><a href="{{ route('service') }}">Photography</a></h5> <a
+                                    href="{{ route('service') }}"><i class="ti-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="position-re o-hidden img-grayscale item-inner"> <img
                                     src="{{ asset('onepage-slider/img/services/6.jpg') }}" alt=""> </div>
                             <div class="con"> <span class="category">
-                                    <a href="services-page.html">Sport</a>
+                                    <a href="{{ route('service') }}">Sport</a>
                                 </span>
-                                <h5><a href="services-page.html">Photography</a></h5> <a href="services-page.html"><i
-                                        class="ti-arrow-right"></i></a>
+                                <h5><a href="{{ route('service') }}">Photography</a></h5> <a
+                                    href="{{ route('service') }}"><i class="ti-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
