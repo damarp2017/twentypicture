@@ -106,28 +106,6 @@
                         Praesent feugiat dui sit amet ullamcorper blandit ligula ligula volutpat ante sed rhoncus nunc
                         ante non ex. Donec porta elementum estid suscipit nisl bibendum vitae. Sedet nisi lacinia the
                         adam drana diam luctus egestas.</p>
-                    <div class="row awards">
-                        <div class="col-md-12">
-                            <div class="title"> <span>Our Awards</span> </div>
-                        </div>
-                        <div class="col-md-12 owl-carousel owl-theme">
-                            <div class="awards-logo">
-                                <a href="#"><img src="{{ asset('onepage-slider/img/awards/1.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="awards-logo">
-                                <a href="#"><img src="{{ asset('onepage-slider/img/awards/2.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="awards-logo">
-                                <a href="#"><img src="{{ asset('onepage-slider/img/awards/3.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="awards-logo">
-                                <a href="#"><img src="{{ asset('onepage-slider/img/awards/4.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="awards-logo">
-                                <a href="#"><img src="{{ asset('onepage-slider/img/awards/5.jpg') }}" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
