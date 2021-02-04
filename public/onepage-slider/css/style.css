@@ -39,7 +39,7 @@ body {
     font-smoothing: antialiased;
 }
 body {
-    font-family: 'Source Sans Pro', serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 16px;
     line-height: 1.75em;
     color: #777;
@@ -122,7 +122,7 @@ p {
     margin-bottom: 15px;
     line-height: 1.75em;
     font-weight: 400;
-    font-family: 'Source Sans Pro', serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     color: #777;
 }
 a,
@@ -285,7 +285,7 @@ input,
 optgroup,
 select,
 textarea {
-    font-family: 'Source Sans Pro', serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -910,7 +910,7 @@ td {
 }
 .team .info h6 {
     color: #777;
-    font-family: 'Source Sans Pro', serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 0px;
@@ -1537,10 +1537,10 @@ blockquote {
     border-left: 1px solid #f96f00;
     padding: 15px 30px;
     text-align: left;
-    font-family: 'Source Sans Pro', serif
+    font-family: 'Yanone Kaffeesatz', sans-serif
 }
 blockquote h3 {
-    font-family: 'Source Sans Pro', serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-style: italic;
 
 }
@@ -1555,18 +1555,18 @@ blockquote span {
 }
 /* Post Comment */
 .post h3 {
-    font-family: 'Source Sans Pro', serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 27px;
     font-weight: 400;
     margin-bottom: 0;
 }
 .post h4 {
-    font-family: 'Source Sans Pro', serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 20px;
     font-weight: 400;
 }
 .post .category {
-    font-family: 'Source Sans Pro', serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -1618,7 +1618,7 @@ ol.comment-list li.comment .comment-author .avatar {
 ol.comment-list li.comment .comment-author .name {
         display: inline-block;
     color: #000;
-    font-family: 'Source Sans Pro', serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 18px;
     line-height: 1.75em;
     font-weight: 500;
@@ -1711,7 +1711,7 @@ ol.comment-list li .children li {
     -ms-border-radius: 0;
     border-radius: 0;
     padding: 0;
-    font-family: 'Source Sans Pro', serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 16px;
     line-height: 1.75em;
     font-weight: 400;
