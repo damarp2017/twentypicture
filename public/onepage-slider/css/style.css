@@ -159,9 +159,13 @@ button {
     background-color: #fff;
 }
 .bg-grey {
-    /* background-color: #f7f7f7; */
+    background-color: #f7f7f7;
+}
+
+.bg-pink {
     background-color: #ffe0da;
 }
+
 .bg-black {
     background-color: #000;
 }
@@ -1725,8 +1729,8 @@ ol.comment-list li .children li {
     text-transform: uppercase;
     line-height: 1.5em;
     color: #fff;
-    border: 1px solid #2b2d42;
-    background: #2b2d42;
+    border: 1px solid #e5a1aa;
+    background: #e5a1aa;
     border-radius: 0;
     text-decoration: none;
     -webkit-transition: all 0.3s ease-out !important;

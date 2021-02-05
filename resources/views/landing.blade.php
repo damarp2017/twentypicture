@@ -370,7 +370,7 @@
     </div>
 </section>
 <!-- Our Team -->
-<section id="team" class="team section-padding bg-grey">
+<section id="team" class="team section-padding">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -457,7 +457,7 @@
 </section>
 <hr class="line-vr-section animate-box" data-animate-effect="fadeInUp">
 <!-- Pricing -->
-<section id="pricing" class="section-padding" data-scroll-index="4">
+<section id="pricing" class="section-padding bg-grey" data-scroll-index="4">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -531,7 +531,7 @@
 <hr class="line-vr-section animate-box" data-animate-effect="fadeInUp">
 <hr class="line-vr-section animate-box" data-animate-effect="fadeInUp">
 <!-- Contact -->
-<section id="contact" class="contact section-padding bg-grey" data-scroll-index="6">
+<section id="contact" class="contact section-padding" data-scroll-index="6">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
