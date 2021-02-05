@@ -1673,6 +1673,11 @@ ol.comment-list li .children li {
     }
 }
 @media only screen and (max-width: 480px) {
+    .header .caption h4 {
+        font-size: 10px;
+        letter-spacing: 8px;
+    }
+
     ol.comment-list li.comment .comment-body {
         margin-left: 26px;
     }
