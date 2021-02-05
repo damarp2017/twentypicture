@@ -5,7 +5,7 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container">
         <!-- Logo -->
-        <img src="{{ asset('onepage-slider/img/logo-warna.png') }}"
+        <img src="{{ asset('onepage-slider/img/logo-putih.png') }}"
             style="max-height: 35px; margin: 12px; margin-top: 7px" alt="">
         <a class="logo" href="{{ route('home') }}"> <img src="{{ asset('onepage-slider/img/twenty-logo.png') }}" alt="">
         </a>
@@ -43,22 +43,28 @@
         <div class="item bg-img" data-overlay-dark="4" data-background="{{ asset('onepage-slider/img/slider1.jpg') }}">
             <div class="container text-center v-middle caption">
                 <h4>Shooting</h4>
-                <h1>Portrait Photography</h1>
-                <a href="#" class="btn"><span>Discover</span></a>
+                <h4>Portrait Photography</h4>
+                <img class="img-fluid mx-auto d-block" src="{{ asset('onepage-slider/img/twenty-logo.png') }}" alt=""
+                    style="width: 50%">
+                {{-- <a href="#" class="btn"><span>Discover</span></a> --}}
             </div>
         </div>
         <div class="item bg-img" data-overlay-dark="3" data-background="{{ asset('onepage-slider/img/slider3.jpg') }}">
             <div class="container text-center v-middle caption">
                 <h4>Shooting</h4>
-                <h1>Wedding Photography</h1>
-                <a href="#" class="btn"><span>Discover</span></a>
+                <h4>Wedding Photography</h4>
+                <img class="img-fluid mx-auto d-block" src="{{ asset('onepage-slider/img/twenty-logo.png') }}" alt=""
+                    style="width: 50%">
+                {{-- <a href="#" class="btn"><span>Discover</span></a> --}}
             </div>
         </div>
         <div class="item bg-img" data-overlay-dark="4" data-background="{{ asset('onepage-slider/img/slider2.jpg') }}">
             <div class="container text-center v-middle caption">
                 <h4>Shooting</h4>
-                <h1>Travel Photography</h1>
-                <a href="#" class="btn"><span>Discover</span></a>
+                <h4>Travel Photography</h4>
+                <img class="img-fluid mx-auto d-block" src="{{ asset('onepage-slider/img/twenty-logo.png') }}" alt=""
+                    style="width: 50%">
+                {{-- <a href="#" class="btn"><span>Discover</span></a> --}}
             </div>
         </div>
     </div>

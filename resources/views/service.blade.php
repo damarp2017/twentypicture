@@ -5,7 +5,7 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container">
         <!-- Logo -->
-        <img src="{{ asset('onepage-slider/img/logo-warna.png') }}"
+        <img src="{{ asset('onepage-slider/img/logo-putih.png') }}"
             style="max-height: 35px; margin: 12px; margin-top: 7px" alt="">
         <a class="logo" href="{{ route('home') }}"> <img src="{{ asset('onepage-slider/img/twenty-logo.png') }}" alt="">
         </a>
