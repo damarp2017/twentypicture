@@ -43,7 +43,7 @@
             data-background="{{ asset('onepage-slider/img/gambar-depan.jpg') }}">
             <div class="container text-center v-middle caption">
                 <img class="img-fluid mx-auto d-block" src="{{ asset('onepage-slider/img/twenty-logo.png') }}" alt=""
-                    style="width: 100%">
+                    style="width: 65%">
                 <h4>MAKE DREAMS COME TRUE</h4>
                 {{-- <a href="#" class="btn"><span>Discover</span></a> --}}
             </div>
