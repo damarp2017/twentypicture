@@ -40,28 +40,10 @@
 <!-- Header Slider -->
 <header class="header pos-re slider-fade" data-scroll-index="0">
     <div class="owl-carousel owl-theme">
-        <div class="item bg-img" data-overlay-dark="4" data-background="{{ asset('onepage-slider/img/slider1.jpg') }}">
+        <div class="item bg-img" data-overlay-dark="4"
+            data-background="{{ asset('onepage-slider/img/gambar-depan.jpg') }}">
             <div class="container text-center v-middle caption">
-                <h4>Shooting</h4>
-                <h4>Portrait Photography</h4>
-                <img class="img-fluid mx-auto d-block" src="{{ asset('onepage-slider/img/twenty-logo.png') }}" alt=""
-                    style="width: 50%">
-                {{-- <a href="#" class="btn"><span>Discover</span></a> --}}
-            </div>
-        </div>
-        <div class="item bg-img" data-overlay-dark="3" data-background="{{ asset('onepage-slider/img/slider3.jpg') }}">
-            <div class="container text-center v-middle caption">
-                <h4>Shooting</h4>
-                <h4>Wedding Photography</h4>
-                <img class="img-fluid mx-auto d-block" src="{{ asset('onepage-slider/img/twenty-logo.png') }}" alt=""
-                    style="width: 50%">
-                {{-- <a href="#" class="btn"><span>Discover</span></a> --}}
-            </div>
-        </div>
-        <div class="item bg-img" data-overlay-dark="4" data-background="{{ asset('onepage-slider/img/slider2.jpg') }}">
-            <div class="container text-center v-middle caption">
-                <h4>Shooting</h4>
-                <h4>Travel Photography</h4>
+                <h4>MAKE DREAM COME TRUE</h4>
                 <img class="img-fluid mx-auto d-block" src="{{ asset('onepage-slider/img/twenty-logo.png') }}" alt=""
                     style="width: 50%">
                 {{-- <a href="#" class="btn"><span>Discover</span></a> --}}
@@ -277,10 +259,10 @@
             </div>
             <div class="col-md-4 gallery-item">
                 <div class="gallery-item-inner">
-                    <a href="{{ asset('onepage-slider/img/gallery/03.jpg') }}" title="Portrait Photography"
+                    <a href="{{ asset('onepage-slider/img/price/engagement.jpg') }}" title="Portrait Photography"
                         class="img-grayscale img-zoom">
                         <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ asset('onepage-slider/img/gallery/03.jpg') }}"
+                            <div class="gallery-img"> <img src="{{ asset('onepage-slider/img/price/engagement.jpg') }}"
                                     class="img-fluid mx-auto d-block" alt=""> </div>
                         </div>
                     </a>
@@ -365,7 +347,7 @@
                     <div class="owl-carousel owl-theme">
                         <div class="testimonial-item text-center">
                             <h5>A few things Twenty Picture believe</h5>
-                            <p>Make our dreams come true</p>
+                            <p>Make dream come true</p>
                         </div>
                         <div class="testimonial-item text-center">
                             <h5>A few things Twenty Picture believe</h5>
@@ -480,164 +462,74 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="title mb-30"> <span>Shooting</span>
-                    <h2>Pricing Tables</h2>
+                <div class="title mb-30"> <span>Photography & Videography</span>
+                    <h2>Pricing</h2>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="price-box">
-                    <div class="price-box-inner img-grayscale"
-                        style="background-image: url({{ asset('onepage-slider/img/price/1.jpg') }})">
-                        <ul>
-                            <li class="pricing-title">
-                                <h3 class="pricing-pt-title" style="color: #ffffff">Standart</h3>
-                            </li>
-                            <li class="pricing-prices"> <sup class="pricing-dolar">$</sup> <span class="pricing-price"
-                                    style="color: #ffffff">300</span>
-                            </li>
-                            <li class="pricing-content">
-                                <ul>
-                                    <li>3 Hours Session</li>
-                                    <li>Photo Editing</li>
-                                    <li>50 Digital Images</li>
-                                    <li>Online Gallery</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <p><a href="#" class="btn mb-30">View More</a></p>
-                    </div>
+        <div class="row mb-30">
+            <div class="col-md-12 gallery-item">
+                <div class="gallery-item-inner">
+                    <a href="{{ asset('onepage-slider/img/price/engagement.jpg') }}"
+                        title="Pricing Engagement Videograpy & Photography" class="img-grayscale img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="{{ asset('onepage-slider/img/price/engagement.jpg') }}"
+                                    class="img-fluid mx-auto d-block" alt=""> </div>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="price-box">
-                    <div class="price-box-inner"
-                        style="background-image: url({{ asset('onepage-slider/img/price/2.jpg') }})">
-                        <ul>
-                            <li class="pricing-title">
-                                <h3 class="pricing-pt-title" style="color: #ffffff">Premium</h3>
-                            </li>
-                            <li class="pricing-prices"> <sup class="pricing-dolar">$</sup> <span class="pricing-price"
-                                    style="color: #ffffff">450</span>
-                            </li>
-                            <li class="pricing-content">
-                                <ul>
-                                    <li>6 Hours Session</li>
-                                    <li>Photo Editing</li>
-                                    <li>100 Digital Images</li>
-                                    <li>Online Gallery</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <p><a href="#" class="btn mb-30">View More</a></p>
-                    </div>
+            <div class="col-md-12 gallery-item">
+                <div class="gallery-item-inner">
+                    <a href="{{ asset('onepage-slider/img/price/PREWEDDING.jpg') }}"
+                        title="Pricing Pre Wedding Photography" class="img-grayscale img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="{{ asset('onepage-slider/img/price/PREWEDDING.jpg') }}"
+                                    class="img-fluid mx-auto d-block" alt=""> </div>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="price-box">
-                    <div class="price-box-inner"
-                        style="background-image: url({{ asset('onepage-slider/img/price/3.jpg') }})">
-                        <ul>
-                            <li class="pricing-title">
-                                <h3 class="pricing-pt-title" style="color: #ffffff">Platinum</h3>
-                            </li>
-                            <li class="pricing-prices"> <sup class="pricing-dolar">$</sup> <span class="pricing-price"
-                                    style="color: #ffffff">750</span>
-                            </li>
-                            <li class="pricing-content">
-                                <ul>
-                                    <li>12 Hours Session</li>
-                                    <li>Photo Editing</li>
-                                    <li>250 Digital Images</li>
-                                    <li>Online Gallery</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <p><a href="#" class="btn mb-30">View More</a></p>
-                    </div>
+            <div class="col-md-12 gallery-item">
+                <div class="gallery-item-inner">
+                    <a href="{{ asset('onepage-slider/img/price/PREWEDDING-VIDEO.jpg') }}"
+                        title="Pricing Pre Wedding Videography" class="img-grayscale img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img
+                                    src="{{ asset('onepage-slider/img/price/PREWEDDING-VIDEO.jpg') }}"
+                                    class="img-fluid mx-auto d-block" alt=""> </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-12 gallery-item">
+                <div class="gallery-item-inner">
+                    <a href="{{ asset('onepage-slider/img/price/wedding-photo.jpg') }}"
+                        title="Pricing Wedding Photography" class="img-grayscale img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img
+                                    src="{{ asset('onepage-slider/img/price/wedding-photo.jpg') }}"
+                                    class="img-fluid mx-auto d-block" alt=""> </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-12 gallery-item">
+                <div class="gallery-item-inner">
+                    <a href="{{ asset('onepage-slider/img/price/wedding-video.jpg') }}"
+                        title="Pricing Wedding Videography" class="img-grayscale img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img
+                                    src="{{ asset('onepage-slider/img/price/wedding-video.jpg') }}"
+                                    class="img-fluid mx-auto d-block" alt=""> </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <hr class="line-vr-section animate-box" data-animate-effect="fadeInUp">
-<!-- Blog -->
-<section id="blog" class="blog section-padding bg-grey" data-scroll-index="5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="title mb-30"> <span>Read</span>
-                    <h2>Latest News</h2>
-                </div>
-            </div>
-            <div class="col-md-6 text-right">
-                <div class="title mt-30 mb-30">
-                    <a href="blog.html"><span><i class="ti-layout-line-solid"></i> All Post</span></a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="cover">
-                    <div class="cover-inner item bg-img"
-                        data-background="{{ asset('onepage-slider/img/services/3.jpg') }}">
-                        <div class="content">
-                            <div class="info">
-                                <a href="#"> <span><i class="ti-time" aria-hidden="true"></i>16 July 2020</span>
-                                    <span><i class="ti-comment-alt" aria-hidden="true"></i>0 Comments</span> </a>
-                            </div>
-                            <a href="post.html">
-                                <h5>Black & White Shots</h5>
-                            </a>
-                            <p>Quisque luctus tincidunt enim dapibusen pharetra neue ultricies at. Morbi dapibus
-                                mauris id selerisque placerat nula massa lacinia orci in facilisis nulla.</p> <a
-                                href="post.html" class="btn">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="cover">
-                    <div class="cover-inner item bg-img"
-                        data-background="{{ asset('onepage-slider/img/services/4.jpg') }}">
-                        <div class="content">
-                            <div class="info">
-                                <a href="#"> <span><i class="ti-time" aria-hidden="true"></i>20 July 2020</span>
-                                    <span><i class="ti-comment-alt" aria-hidden="true"></i>0 Comments</span> </a>
-                            </div>
-                            <a href="post.html">
-                                <h5>Product Shots</h5>
-                            </a>
-                            <p>Quisque luctus tincidunt enim dapibusen pharetra neue ultricies at. Morbi dapibus
-                                mauris id selerisque placerat nula massa lacinia orci in facilisis nulla.</p> <a
-                                href="post.html" class="btn">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="cover">
-                    <div class="cover-inner item bg-img"
-                        data-background="{{ asset('onepage-slider/img/services/1.jpg') }}">
-                        <div class="content">
-                            <div class="info">
-                                <a href="#"> <span><i class="ti-time" aria-hidden="true"></i>23 July 2020</span>
-                                    <span><i class="ti-comment-alt" aria-hidden="true"></i>0 Comments</span> </a>
-                            </div>
-                            <a href="post.html">
-                                <h5>Lovely Wedding</h5>
-                            </a>
-                            <p>Quisque luctus tincidunt enim dapibusen pharetra neue ultricies at. Morbi dapibus
-                                mauris id selerisque placerat nula massa lacinia orci in facilisis nulla.</p> <a
-                                href="post.html" class="btn">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <hr class="line-vr-section animate-box" data-animate-effect="fadeInUp">
 <!-- Contact -->
 <section id="contact" class="contact section-padding" data-scroll-index="6">

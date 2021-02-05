@@ -54,7 +54,7 @@ h4,
 h5,
 h6 {
     font-family: "Pathway Gothic One", sans-serif;
-    color: #ff477e;
+    color: #e5a1aa;
     font-weight: 400;
     line-height: 1.75em;
     margin-bottom: 15px;
@@ -110,7 +110,7 @@ ul {
 }
 b {
     font-weight: 600;
-    color: #ff477e;
+    color: #e5a1aa;
 }
 p,
 li,
@@ -320,7 +320,7 @@ textarea {
 input:focus,
 textarea:focus {
     border-bottom-width: 2px;
-    border-color: #ff477e;
+    border-color: #e5a1aa;
 }
 input[type="submit"],
 input[type="reset"],
@@ -380,7 +380,7 @@ td {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #ff477e;
+    background-color: #e5a1aa;
     z-index: 999999;
 }
 #loader .loading,
@@ -481,7 +481,7 @@ td {
     color: #2b2d42 !important;
 }
 .nav-scroll {
-    background: #ff477e;
+    background: #e5a1aa;
     padding: 0;
     position: fixed;
     top: -100px;
@@ -503,7 +503,7 @@ td {
 }
 .nav-scroll .navbar-nav .logo {
     padding: 15px 0;
-    color: #ff477e;
+    color: #e5a1aa;
 }
 .nav-scroll .container {
     margin-top: 0 !important;
@@ -520,11 +520,11 @@ td {
     margin-top: 20px;
 }
 .nav-box .container .navbar-nav .nav-link {
-    color: #ff477e;
+    color: #e5a1aa;
 }
 .nav-box .container .navbar-nav .logo {
     padding: 15px 0;
-    color: #ff477e;
+    color: #e5a1aa;
 }
 .nav-box.radius .container {
     border-radius: 40px;
@@ -538,7 +538,7 @@ td {
     .navbar .navbar-collapse {
         max-height: 400px;
         overflow: auto;
-        background: #ff477e;
+        background: #e5a1aa;
         text-align: left;
         padding: 20px 0;
         border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -838,7 +838,7 @@ td {
 .services .item .con .btn {
     margin-left: 0;
     border-radius: 30px;
-    border-color: #ff477e;
+    border-color: #e5a1aa;
     padding: 11px 30px;
 }
 .services .item .con .btn:hover {
@@ -1028,7 +1028,7 @@ td {
 }
 .testimonial-say .testimonial-item h6 {
     font-size: 14px;
-    color: #ff477e;
+    color: #e5a1aa;
     margin: 15px 0;
     font-family: "Pathway Gothic One", sans-serif;
     font-weight: 400;
@@ -1294,7 +1294,7 @@ td {
     letter-spacing: 2px;
 }
 .blog-page .post-cont h5 a {
-    color: #ff477e;
+    color: #e5a1aa;
 }
 .blog-page .post-cont h5 a:hover {
     color: #2b2d42;
@@ -1395,7 +1395,7 @@ td {
 .blog-sidebar .tags li {
     margin: 3px !important;
     padding: 4px 16px;
-    background-color: #ff477e;
+    background-color: #e5a1aa;
     color: #fff !important;
     float: left;
 }
@@ -1495,7 +1495,7 @@ td {
     letter-spacing: 2px;
 }
 .post-page .post-cont h5 a {
-    color: #ff477e;
+    color: #e5a1aa;
 }
 .post-page .post-cont h5 a:hover {
     color: #2b2d42;
@@ -1602,7 +1602,7 @@ ol.comment-list li.comment .comment-author .avatar {
 }
 ol.comment-list li.comment .comment-author .name {
     display: inline-block;
-    color: #ff477e;
+    color: #e5a1aa;
     font-family: "Yanone Kaffeesatz", sans-serif;
     font-size: 18px;
     line-height: 1.75em;
@@ -1624,7 +1624,7 @@ ol.comment-list li.comment .comment-meta {
     color: #777;
 }
 ol.comment-list li.comment .comment-meta a {
-    color: #ff477e;
+    color: #e5a1aa;
 }
 ol.comment-list li.comment .comment-meta:before,
 ol.comment-list li.comment .reply a:before {
@@ -1737,8 +1737,8 @@ ol.comment-list li .children li {
 .btn:hover,
 .btn:focus {
     color: #fff;
-    border: 1px solid #ff477e;
-    background: #ff477e;
+    border: 1px solid #e5a1aa;
+    background: #e5a1aa;
     -webkit-box-shadow: none;
     box-shadow: none;
     outline: none !important;
@@ -1774,7 +1774,7 @@ ol.comment-list li .children li {
 
 /* ======= Footer style ======= */
 .footer-section {
-    background: #ff477e;
+    background: #e5a1aa;
     padding: 120px 0;
     width: 100%;
 }
@@ -1875,7 +1875,7 @@ ol.comment-list li .children li {
     z-index: 1;
 }
 [data-overlay-dark]:before {
-    background: #ff477e;
+    background: #e5a1aa;
 }
 [data-overlay-light]:before {
     background: #fff;
