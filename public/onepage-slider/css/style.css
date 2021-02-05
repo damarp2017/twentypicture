@@ -54,7 +54,7 @@ h4,
 h5,
 h6 {
     font-family: "Pathway Gothic One", sans-serif;
-    color: #e5a1aa;
+    color: #dc7f8e;
     font-weight: 400;
     line-height: 1.75em;
     margin-bottom: 15px;
@@ -110,7 +110,7 @@ ul {
 }
 b {
     font-weight: 600;
-    color: #e5a1aa;
+    color: #dc7f8e;
 }
 p,
 li,
@@ -159,7 +159,8 @@ button {
     background-color: #fff;
 }
 .bg-grey {
-    background-color: #f7f7f7;
+    /* background-color: #f7f7f7; */
+    background-color: #ffe0da;
 }
 .bg-black {
     background-color: #000;
@@ -320,7 +321,7 @@ textarea {
 input:focus,
 textarea:focus {
     border-bottom-width: 2px;
-    border-color: #e5a1aa;
+    border-color: #dc7f8e;
 }
 input[type="submit"],
 input[type="reset"],
@@ -1028,7 +1029,7 @@ td {
 }
 .testimonial-say .testimonial-item h6 {
     font-size: 14px;
-    color: #e5a1aa;
+    color: #dc7f8e;
     margin: 15px 0;
     font-family: "Pathway Gothic One", sans-serif;
     font-weight: 400;
@@ -1294,7 +1295,7 @@ td {
     letter-spacing: 2px;
 }
 .blog-page .post-cont h5 a {
-    color: #e5a1aa;
+    color: #dc7f8e;
 }
 .blog-page .post-cont h5 a:hover {
     color: #2b2d42;
@@ -1395,7 +1396,7 @@ td {
 .blog-sidebar .tags li {
     margin: 3px !important;
     padding: 4px 16px;
-    background-color: #e5a1aa;
+    background-color: #dc7f8e;
     color: #fff !important;
     float: left;
 }
@@ -1495,7 +1496,7 @@ td {
     letter-spacing: 2px;
 }
 .post-page .post-cont h5 a {
-    color: #e5a1aa;
+    color: #dc7f8e;
 }
 .post-page .post-cont h5 a:hover {
     color: #2b2d42;
@@ -1602,7 +1603,7 @@ ol.comment-list li.comment .comment-author .avatar {
 }
 ol.comment-list li.comment .comment-author .name {
     display: inline-block;
-    color: #e5a1aa;
+    color: #dc7f8e;
     font-family: "Yanone Kaffeesatz", sans-serif;
     font-size: 18px;
     line-height: 1.75em;
@@ -1624,7 +1625,7 @@ ol.comment-list li.comment .comment-meta {
     color: #777;
 }
 ol.comment-list li.comment .comment-meta a {
-    color: #e5a1aa;
+    color: #dc7f8e;
 }
 ol.comment-list li.comment .comment-meta:before,
 ol.comment-list li.comment .reply a:before {
@@ -1737,8 +1738,8 @@ ol.comment-list li .children li {
 .btn:hover,
 .btn:focus {
     color: #fff;
-    border: 1px solid #e5a1aa;
-    background: #e5a1aa;
+    border: 1px solid #dc7f8e;
+    background: #dc7f8e;
     -webkit-box-shadow: none;
     box-shadow: none;
     outline: none !important;
@@ -1875,7 +1876,7 @@ ol.comment-list li .children li {
     z-index: 1;
 }
 [data-overlay-dark]:before {
-    background: #e5a1aa;
+    background: #000;
 }
 [data-overlay-light]:before {
     background: #fff;

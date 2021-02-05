@@ -6,9 +6,11 @@
     <div class="container">
         <!-- Logo -->
         <img src="{{ asset('onepage-slider/img/logo-putih.png') }}"
-            style="max-height: 35px; margin: 12px; margin-top: 7px" alt="">
-        <a class="logo" href="{{ route('home') }}"> <img src="{{ asset('onepage-slider/img/twenty-logo.png') }}" alt="">
-        </a>
+            style="max-height: 35px; margin: 12px; margin-top: 8px" alt="">
+        <h3 class="logo text-white m-0">Twenty Picture</h3>
+        {{-- <a class="logo" href="{{ route('home') }}"> <img src="{{ asset('onepage-slider/img/twenty-logo.png') }}"
+            alt="">
+        </a> --}}
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
                 class="icon-bar"><i class="ti-line-double"></i></span> </button>
@@ -28,9 +30,6 @@
                     <a class="nav-link" href="{{ route('home') }}" data-scroll-nav="4">Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('home') }}" data-scroll-nav="5">Blog</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}" data-scroll-nav="6">Contact</a>
                 </li>
             </ul>
@@ -43,9 +42,9 @@
         <div class="item bg-img" data-overlay-dark="4"
             data-background="{{ asset('onepage-slider/img/gambar-depan.jpg') }}">
             <div class="container text-center v-middle caption">
-                <h4>MAKE DREAM COME TRUE</h4>
                 <img class="img-fluid mx-auto d-block" src="{{ asset('onepage-slider/img/twenty-logo.png') }}" alt=""
-                    style="width: 50%">
+                    style="width: 100%">
+                <h4>MAKE DREAMS COME TRUE</h4>
                 {{-- <a href="#" class="btn"><span>Discover</span></a> --}}
             </div>
         </div>
@@ -347,7 +346,7 @@
                     <div class="owl-carousel owl-theme">
                         <div class="testimonial-item text-center">
                             <h5>A few things Twenty Picture believe</h5>
-                            <p>Make dream come true</p>
+                            <p>Make dreams come true</p>
                         </div>
                         <div class="testimonial-item text-center">
                             <h5>A few things Twenty Picture believe</h5>
@@ -532,7 +531,7 @@
 <hr class="line-vr-section animate-box" data-animate-effect="fadeInUp">
 <hr class="line-vr-section animate-box" data-animate-effect="fadeInUp">
 <!-- Contact -->
-<section id="contact" class="contact section-padding" data-scroll-index="6">
+<section id="contact" class="contact section-padding bg-grey" data-scroll-index="6">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

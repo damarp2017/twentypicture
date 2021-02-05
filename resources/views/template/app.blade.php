@@ -22,13 +22,13 @@
     <link rel="stylesheet" href="{{ asset('onepage-slider/css/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="{{ asset('onepage-slider/css/style.css') }}">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144098545-1"></script>
+    {{-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144098545-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'UA-144098545-1');
-    </script>
+    </script> --}}
 </head>
 
 <body>
