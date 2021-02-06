@@ -69,20 +69,26 @@
                 <div class="title">
                     <span>About Us</span>
                     <h2>Twenty Picture</h2>
-                    <h4>Twenty Picture is a company engaged in photography and videography since 2016 until now.</h4>
+                    <h4>Twenty Picture is a company engaged in photography & videography from 2016 until now.</h4>
                 </div>
-                <div class="title">
-                    <span>History</span>
+                <div class="title mb-3">
+                    <span>History of Twenty Picture</span>
                 </div>
-                <p>Kribo started his career in the world of photography and videography by establishing a brand called
-                    Kribo Art with Yuki as his partner in Pekalongan. At the end of 2017, Kribo decided to move his
-                    business to Tegal because that was his main goal. With a simple camera and incomplete
-                    equipment, Kribo dared to market his services and work to his clients. At the end of 2018, he began
-                    to collaborate with investors to expand his business in the world of photography and videography
-                    until he changed his brand name to "Tickzup Studio" with his new management. Until mid-2019, several
-                    investors and his friends left "Tickzup Studio". Kribo then continued his business with the help of
-                    several freelance photographers and on February 20, 2020 a new brand named "Twenty Picture" was
-                    born.
+                <p>
+                    “Twenty Picture” was created by <strong>Keribo</strong> and his playmates in arms. He started his
+                    career in the world
+                    of photography & videography. The brand name “Keribo Art” was launched in 2016 in
+                    Pekalongan with his
+                    partner named <strong>Yuki</strong>. In late 2017, he decided to move his business to Tegal, because
+                    that was his ambition from the past.
+                    <br>With some makeshift camera capital and incomplete property/equipment, he
+                    dared to market his work to clients. Until mid-2018, the “Keribo Art” brand became
+                    known from several circles. In late 2018, he began working with investors to build its photo and
+                    videography business, until it changed its name to “Tickzup Studio” with management and new friends.
+                    <br>Until mid-2019, several investors and their themes left “Tickzup Studio”. Even though some of
+                    his teams were left behind, <strong>Keribo</strong> continued his business with the help of several
+                    freelance photographers who were willing to help him until on February 20<sup>th</sup>, 2020, it
+                    changed its name to “Twenty Picture” until now.
                 </p>
             </div>
         </div>
