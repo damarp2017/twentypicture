@@ -44,8 +44,19 @@
             <div class="container text-center v-middle caption">
                 <img class="img-fluid mx-auto d-block" src="{{ asset('onepage-slider/img/twenty-logo.png') }}" alt=""
                     style="width: 65%">
-                <h4>MAKE DREAMS COME TRUE</h4>
-                {{-- <a href="#" class="btn"><span>Discover</span></a> --}}
+                <h4 class="">MAKE DREAMS COME TRUE</h4>
+                <div class="mt-3">
+                    <a href="https://www.instagram.com/twenty.picture/" target="_blank" class="btn mr-2 ml-2 mt-2">
+                        <span>
+                            <i class="fab fa-instagram"></i>&nbsp;twenty.picture
+                        </span>
+                    </a>
+                    <a href="http://wa.me/6282329919955" target="_blank" class="btn mr-2 ml-2 mt-2">
+                        <span>
+                            <i class="fab fa-whatsapp"></i>&nbsp;+62 823-2991-9955
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -555,7 +566,7 @@
                 </div>
                 <div class="item">
                     <p><b>Google Map</b> : <a
-                            href="https://www.google.com/maps/place/6%C2%B052'52.3%22S+109%C2%B005'29.3%22E/@-6.8812024,109.0892743,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d-6.8812024!4d109.091463?hl=en"
+                            href="https://www.google.com/maps/place/Twenty+picture/@-6.8812713,109.0913649,19.5z/data=!4m19!1m13!4m12!1m3!2m2!1d109.0914787!2d-6.881067!1m6!1m2!1s0x2e6fbb30910362a9:0x6cfba4551de1a2be!2sTwenty+picture,+Jl.+Brigjen.+Slamet+Riaydi+No.78,+Cabawan,+Kec.+Margadana,+Kota+Tegal,+Jawa+Tengah+52147!2m2!1d109.091482!2d-6.88104!3e2!3m4!1s0x2e6fbb30910362a9:0x6cfba4551de1a2be!8m2!3d-6.88104!4d109.091482?hl=en"
                             target="_blank">Get Directions</a>
                     </p>
                 </div>

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{{ asset('onepage-slider/css/owl.carousel.css') }}">
     <link rel="stylesheet" href="{{ asset('onepage-slider/css/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="{{ asset('onepage-slider/css/style.css') }}">
+    <script src="https://kit.fontawesome.com/d22f2e6b7d.js" crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     {{-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144098545-1"></script>
     <script>
