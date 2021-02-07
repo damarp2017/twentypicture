@@ -61,10 +61,10 @@ class PriceListController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\PriceList  $priceList
+     * @param  \App\Models\PriceList  $pricelist
      * @return \Illuminate\Http\Response
      */
-    public function show(PriceList $priceList)
+    public function show(PriceList $pricelist)
     {
         //
     }
@@ -72,10 +72,10 @@ class PriceListController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\PriceList  $priceList
+     * @param  \App\Models\PriceList  $pricelist
      * @return \Illuminate\Http\Response
      */
-    public function edit(PriceList $priceList)
+    public function edit(PriceList $pricelist)
     {
         //
     }
@@ -84,10 +84,10 @@ class PriceListController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\PriceList  $priceList
+     * @param  \App\Models\PriceList  $pricelist
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, PriceList $priceList)
+    public function update(Request $request, PriceList $pricelist)
     {
         //
     }
@@ -95,15 +95,15 @@ class PriceListController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\PriceList  $priceList
+     * @param  \App\Models\PriceList  $pricelist
      * @return \Illuminate\Http\Response
      */
-    public function destroy(PriceList $priceList)
+    public function destroy(PriceList $pricelist)
     {
-        if (Storage::exists($priceList->image)) {
-            Storage::delete($priceList->image);
+        if (Storage::exists($pricelist->image)) {
+            Storage::delete($pricelist->image);
         }
-        $priceList->delete();
-        return redirect()->route('pricelist')->withSuccess("Image: $priceList->title deleted successfully.");
+        $pricelist->delete();
+        return redirect()->route('pricelist')->withSuccess("Image: $pricelist->title deleted successfully.");
     }
 }
