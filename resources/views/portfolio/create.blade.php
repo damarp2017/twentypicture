@@ -1,0 +1,66 @@
+<x-app-layout>
+    <x-slot name="header">
+        <div class="flex justify-between">
+            <div>
+                <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                    {{ __('New Portfolio') }}
+                </h2>
+            </div>
+        </div>
+    </x-slot>
+    <div class="py-4">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            @if ($errors->any())
+            <div class="text-white bg-red-500 overflow-hidden shadow-sm sm:rounded-lg p-4 mb-4 w-full">
+                @foreach ($errors->all() as $error)
+                <div>{{$error}}</div>
+                @endforeach
+            </div>
+            @endif
+            @if ($categories->count())
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 bg-white border-b border-gray-200">
+                    <form action="{{ route('portfolio.store') }}" method="post" enctype="multipart/form-data">
+                        @csrf
+                        <div>
+                            <x-label for="category" :value="__('Category')" />
+                            <select name="category" id="category"
+                                class="shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block mt-1 w-full rounded-lg"
+                                required>
+                                <option value=""
+                                    class="shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block mt-1 w-full rounded-lg">
+                                    -- Please Select Category --
+                                </option>
+                                @foreach ($categories as $category)
+                                <option value="{{ $category->id }}"
+                                    class="shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block mt-1 w-full rounded-lg">
+                                    {{ $category->title }}
+                                </option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="my-6">
+                            <x-label for="image" :value="__('Image')" />
+                            <input id="image"
+                                class="shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block mt-1 w-full"
+                                type="file" name="image" :value="old('image')" required autofocus />
+                        </div>
+                        <div class="my-6">
+                            <x-label for="title" :value="__('Title')" />
+                            <x-input id="title" class="block mt-1 w-full" type="text" name="title" :value="old('title')"
+                                required autofocus placeholder="Enter Title" />
+                        </div>
+                        <div class="flex items-center justify-end mt-4">
+                            <x-button class="ml-3">
+                                {{ __('Create') }}
+                            </x-button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            @else
+            <h2 class="text-red-500">You need to create category first.</h2>
+            @endif
+        </div>
+    </div>
+</x-app-layout>
