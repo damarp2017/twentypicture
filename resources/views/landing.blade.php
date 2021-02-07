@@ -5,9 +5,13 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container">
         <!-- Logo -->
-        <img src="{{ asset('onepage-slider/img/logo-putih.png') }}"
-            style="max-height: 35px; margin: 12px; margin-top: 8px" alt="">
-        <h3 class="logo text-white m-0">Twenty Picture</h3>
+        <a href="">
+            <img src="{{ asset('onepage-slider/img/logo-putih.png') }}"
+                style="max-height: 35px; margin: 12px; margin-top: 8px" alt="">
+        </a>
+        <a href="">
+            <h3 class="logo text-white m-0">Twenty Picture</h3>
+        </a>
         {{-- <a class="logo" href="{{ route('home') }}"> <img src="{{ asset('onepage-slider/img/twenty-logo.png') }}"
             alt="">
         </a> --}}
