@@ -235,6 +235,12 @@
                 </div>
             </div>
         </div>
+        <hr style="border-top: 2px solid #2b2d42 !important;">
+        <div class="row">
+            <div class="col-12">
+                <h2>Wedding</h2>
+            </div>
+        </div>
         <div class="row mb-30">
             <div class="col-md-4 gallery-item">
                 <div class="gallery-item-inner">
@@ -280,6 +286,14 @@
                     </a>
                 </div>
             </div>
+        </div>
+        <hr style="border-top: 2px solid #2b2d42 !important;">
+        <div class="row">
+            <div class="col-12">
+                <h2>Pre Wedding</h2>
+            </div>
+        </div>
+        <div class="row mb-30">
             <div class="col-md-4 gallery-item">
                 <div class="gallery-item-inner">
                     <a href="{{ asset('onepage-slider/img/gallery/04.jpg') }}" title="Travel Photography"
@@ -347,6 +361,37 @@
                 </div>
             </div>
         </div>
+        <hr style="border-top: 2px solid #2b2d42 !important;">
+        <div class="row">
+            <div class="col-12">
+                <h2>Engagement</h2>
+            </div>
+        </div>
+        <div class="row mb-30">
+            <div class="col-md-4 gallery-item">
+                <div class="gallery-item-inner">
+                    <a href="{{ asset('onepage-slider/img/gallery/08.jpg') }}" title="Product Photography"
+                        class="img-grayscale img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="{{ asset('onepage-slider/img/gallery/08.jpg') }}"
+                                    class="img-fluid mx-auto d-block" alt=""> </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 gallery-item">
+                <div class="gallery-item-inner">
+                    <a href="{{ asset('onepage-slider/img/gallery/09.jpg') }}" title="Still Life Photography"
+                        class="img-grayscale img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="{{ asset('onepage-slider/img/gallery/09.jpg') }}"
+                                    class="img-fluid mx-auto d-block" alt=""> </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr style="border-top: 2px solid #2b2d42 !important;">
     </div>
 </section>
 <!-- Testimonials -->
