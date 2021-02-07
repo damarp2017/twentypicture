@@ -3,9 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\PriceList;
+use Cloudinary\Cloudinary;
 use Illuminate\Http\Request;
+use Illuminate\Support\Env;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
+use League\CommonMark\Environment;
 
 class PriceListController extends Controller
 {
@@ -50,7 +54,12 @@ class PriceListController extends Controller
         }
 
         $pricelist = new PriceList();
-        $path = Storage::putFile('public/image/pricelist', $request->file('image'));
+        if (App::environment('heroku')) {
+            $result = $request->file('image')->storeOnCloudinary('twentypicture/pricelist');
+            $path = $result->getSecurePath();
+        } else {
+            $path = Storage::putFile('public/image/pricelist', $request->file('image'));
+        }
         $pricelist->image = $path;
         $pricelist->title = $request->title;
         $pricelist->save();
@@ -100,8 +109,10 @@ class PriceListController extends Controller
      */
     public function destroy(PriceList $pricelist)
     {
-        if (Storage::exists($pricelist->image)) {
-            Storage::delete($pricelist->image);
+        if (!App::environment('heroku')) {
+            if (Storage::exists($pricelist->image)) {
+                Storage::delete($pricelist->image);
+            }
         }
         $pricelist->delete();
         return redirect()->route('pricelist')->withSuccess("Image: $pricelist->title deleted successfully.");

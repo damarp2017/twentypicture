@@ -23,7 +23,11 @@
             @foreach ($pricelists as $pricelist)
             <div class="my-2 md:px-2 w-full md:w-1/2 lg:my-4 lg:px-2 lg:w-1/3">
                 <article class="overflow-hidden rounded-lg shadow-lg">
+                    @if (App::environment('heroku'))
+                    <img alt="Placeholder" class="block h-auto w-full" src="{{ $pricelist->image }}">
+                    @else
                     <img alt="Placeholder" class="block h-auto w-full" src="{{ url(Storage::url($pricelist->image)) }}">
+                    @endif
                     <header class="flex items-center justify-between leading-tight p-2 md:p-4">
                         <h1 class="text-lg">
                             {{ $pricelist->title }}

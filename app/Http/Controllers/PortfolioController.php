@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Portfolio;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 
@@ -57,7 +58,12 @@ class PortfolioController extends Controller
         }
 
         $portfolio = new Portfolio();
-        $path = Storage::putFile('public/image/portfolio', $request->file('image'));
+        if (App::environment('heroku')) {
+            $result = $request->file('image')->storeOnCloudinary('twentypicture/portfolio');
+            $path = $result->getSecurePath();
+        } else {
+            $path = Storage::putFile('public/image/portfolio', $request->file('image'));
+        }
         $portfolio->image = $path;
         $portfolio->title = $request->title;
         $portfolio->category_id = $request->category;
@@ -108,8 +114,10 @@ class PortfolioController extends Controller
      */
     public function destroy(Portfolio $portfolio)
     {
-        if (Storage::exists($portfolio->image)) {
-            Storage::delete($portfolio->image);
+        if (!App::environment('heroku')) {
+            if (Storage::exists($portfolio->image)) {
+                Storage::delete($portfolio->image);
+            }
         }
         $portfolio->delete();
         return redirect()->route('portfolio')->withSuccess("Image: $portfolio->title success deleted");
