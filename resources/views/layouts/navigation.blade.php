@@ -17,14 +17,22 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('category')" :active="request()->routeIs('category')">
+                    <x-nav-link :href="route('category')" :active="request()->routeIs(['category', 'category.create'])">
                         {{ __('Category') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('portfolio')" :active="request()->routeIs('portfolio')">
+                    <x-nav-link :href="route('portfolio')"
+                        :active="request()->routeIs(['portfolio', 'portfolio.create'])">
                         {{ __('Portfolio') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('pricelist')" :active="request()->routeIs('pricelist')">
+                    <x-nav-link :href="route('pricelist')"
+                        :active="request()->routeIs(['pricelist', 'pricelist.create'])">
                         {{ __('Price List') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('service')" :active="request()->routeIs(['service', 'service.create'])">
+                        {{ __('Service') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('contact')" :active="request()->routeIs(['contact'])">
+                        {{ __('Contact') }}
                     </x-nav-link>
                 </div>
             </div>
@@ -84,14 +92,23 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('category')" :active="request()->routeIs('category')">
+            <x-responsive-nav-link :href="route('category')"
+                :active="request()->routeIs(['category', 'category.create'])">
                 {{ __('Category') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('portfolio')" :active="request()->routeIs('portfolio')">
+            <x-responsive-nav-link :href="route('portfolio')"
+                :active="request()->routeIs(['portfolio', 'portfolio.create'])">
                 {{ __('Portfolio') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('pricelist')" :active="request()->routeIs('pricelist')">
+            <x-responsive-nav-link :href="route('pricelist')"
+                :active="request()->routeIs(['pricelist', 'pricelist.create'])">
                 {{ __('Price List') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('service')" :active="request()->routeIs(['service', 'service.create'])">
+                {{ __('Service') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('contact')" :active="request()->routeIs(['contact'])">
+                {{ __('Contact') }}
             </x-responsive-nav-link>
         </div>
 

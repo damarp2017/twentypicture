@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\PriceListController;
+use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,6 +34,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+// Start Portfolios
 Route::get('/portfolio', [
     PortfolioController::class,
     'index'
@@ -51,7 +54,10 @@ Route::get('/portfolio/{portfolio}/delete', [
     PortfolioController::class,
     'destroy'
 ])->middleware(['auth'])->name('portfolio.destroy');
+// end portfolio
 
+
+// start category
 Route::get('/category', [
     CategoryController::class,
     'index'
@@ -81,7 +87,10 @@ Route::get('/category/{category}/destroy', [
     CategoryController::class,
     'destroy'
 ])->middleware(['auth'])->name('category.destroy');
+// end category
 
+
+// start pricelist
 Route::get('/pricelist', [
     PriceListController::class,
     'index'
@@ -101,5 +110,43 @@ Route::get('/pricelist/{pricelist}/destroy', [
     PriceListController::class,
     'destroy'
 ])->middleware(['auth'])->name('pricelist.destroy');
+// end pricelist
+
+
+// start service
+Route::get('/service', [
+    ServiceController::class,
+    'index'
+])->middleware(['auth'])->name('service');
+
+Route::get('/service/create', [
+    ServiceController::class,
+    'create'
+])->middleware(['auth'])->name('service.create');
+
+Route::post('/service/store', [
+    ServiceController::class,
+    'store'
+])->middleware(['auth'])->name('service.store');
+
+Route::get('/service/{service}/destroy', [
+    ServiceController::class,
+    'destroy'
+])->middleware(['auth'])->name('service.destroy');
+// end service
+
+
+// start contact
+Route::get('/contact', [
+    ContactController::class,
+    'index'
+])->middleware(['auth'])->name('contact');
+
+Route::post('/contact', [
+    ContactController::class,
+    'update'
+])->middleware(['auth'])->name('contact.update');
+// end contact
+
 
 require __DIR__ . '/auth.php';
