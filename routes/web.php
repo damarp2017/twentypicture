@@ -1,10 +1,16 @@
 <?php
 
+use App\Http\Controllers\BannerController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LandingController;
+use App\Http\Controllers\MessageController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\PriceListController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\YoutubeEmbedController;
+use App\Models\YoutubeEmbed;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,17 +28,19 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('landing');
-})->name('home');
+Route::get('/', [
+    LandingController::class,
+    'index'
+])->name('home');
 
-Route::get('service', function () {
-    return view('service');
-})->name('service');
+// Route::get('service', function () {
+//     return view('service');
+// })->name('service');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('/dashboard', [
+    HomeController::class,
+    'index'
+])->middleware(['auth'])->name('dashboard');
 
 // Start Portfolios
 Route::get('/portfolio', [
@@ -147,6 +155,62 @@ Route::post('/contact', [
     'update'
 ])->middleware(['auth'])->name('contact.update');
 // end contact
+
+
+// start message
+Route::post('message', [
+    MessageController::class,
+    'store'
+])->name('message.store');
+
+Route::get('message/{message}/destroy', [
+    HomeController::class,
+    'destroy'
+])->name('message.destroy');
+// end message
+
+
+// start youtube embed video
+Route::get('youtube', [
+    YoutubeEmbedController::class,
+    'index'
+])->middleware(['auth'])->name('youtube');
+Route::get('youtube/create', [
+    YoutubeEmbedController::class,
+    'create'
+])->middleware(['auth'])->name('youtube.create');
+Route::post('youtube/store', [
+    YoutubeEmbedController::class,
+    'store'
+])->middleware(['auth'])->name('youtube.store');
+Route::get('youtube/{youtube}/destroy', [
+    YoutubeEmbedController::class,
+    'destroy'
+])->middleware(['auth'])->name('youtube.destroy');
+// end youtube embed video
+
+
+// start banner
+Route::get('banner', [
+    BannerController::class,
+    'index'
+])->middleware(['auth'])->name('banner');
+
+Route::get('banner/create', [
+    BannerController::class,
+    'create'
+])->middleware(['auth'])->name('banner.create');
+
+Route::post('banner/store', [
+    BannerController::class,
+    'store'
+])->middleware(['auth'])->name('banner.store');
+
+Route::get('banner/{banner}/destroy', [
+    BannerController::class,
+    'destroy'
+])->middleware(['auth'])->name('banner.destroy');
+// end banner
 
 
 require __DIR__ . '/auth.php';

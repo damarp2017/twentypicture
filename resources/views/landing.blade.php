@@ -43,26 +43,60 @@
 <!-- Header Slider -->
 <header class="header pos-re slider-fade" data-scroll-index="0">
     <div class="owl-carousel owl-theme">
+        @if ($banners->count())
+        @foreach ($banners as $banner)
         <div class="item bg-img" data-overlay-dark="4"
-            data-background="{{ asset('onepage-slider/img/gambar-depan.jpg') }}">
+            data-background="{{ asset('onepage-slider/img/banner/gambardepan1.jpg') }}">
             <div class="container text-center v-middle caption">
                 <img class="img-fluid mx-auto d-block" src="{{ asset('onepage-slider/img/twenty-logo.png') }}" alt=""
                     style="width: 65%">
                 <h4 class="">MAKE DREAMS COME TRUE</h4>
                 <div class="mt-3">
-                    <a href="https://www.instagram.com/twenty.picture/" target="_blank" class="btn mr-2 ml-2 mt-2">
+                    <a href="https://www.instagram.com/{{ $contact->instagram }}/" target="_blank"
+                        class="btn mr-2 ml-2 mt-2">
                         <span>
-                            <i class="fab fa-instagram"></i>&nbsp;twenty.picture
+                            <i class="fab fa-instagram"></i>&nbsp;{{ $contact->instagram }}
                         </span>
                     </a>
-                    <a href="http://wa.me/6282329919955" target="_blank" class="btn mr-2 ml-2 mt-2">
+                    <a href="http://wa.me/{{ $contact->whatsapp }}" target="_blank" class="btn mr-2 ml-2 mt-2">
                         <span>
-                            <i class="fab fa-whatsapp"></i>&nbsp;+62 823-2991-9955
+                            <i class="fab fa-whatsapp"></i>&nbsp;+{{ $contact->whatsapp }}
                         </span>
                     </a>
                 </div>
             </div>
         </div>
+        @endforeach
+        @else
+        <section class="ready banner-padding bg-img" data-overlay-dark="8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="container text-center v-middle caption">
+                            <img class="img-fluid mx-auto d-block"
+                                src="{{ asset('onepage-slider/img/twenty-logo.png') }}" alt="" style="width: 65%">
+                            <h4 class="">MAKE DREAMS COME TRUE</h4>
+                            <div class="mt-3">
+                                <a href="https://www.instagram.com/{{ $contact->instagram }}/" target="_blank"
+                                    class="btn mr-2 ml-2 mt-2">
+                                    <span>
+                                        <i class="fab fa-instagram"></i>&nbsp;{{ $contact->instagram }}
+                                    </span>
+                                </a>
+                                <a href="http://wa.me/{{ $contact->whatsapp }}" target="_blank"
+                                    class="btn mr-2 ml-2 mt-2">
+                                    <span>
+                                        <i class="fab fa-whatsapp"></i>&nbsp;+{{ $contact->whatsapp }}
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        @endif
+
     </div>
 </header>
 <!-- About -->
@@ -113,116 +147,21 @@
         <div class="row">
             <div class="col-md-12 mb-30">
                 <div class="owl-carousel owl-theme text-center">
+                    @if ($services->count())
+                    @foreach ($services as $service)
                     <div class="item">
-                        <div class="position-re o-hidden img-grayscale item-inner"> <img
-                                src="{{ asset('onepage-slider/img/services/1.jpg') }}" alt=""> </div>
-                        <div class="con"> <span class="category">
-                                <a href="{{ route('service') }}">Engagement</a>
-                            </span>
-                            <h5><a href="{{ route('service') }}">Videography & Photography</a></h5> <a
-                                href="{{ route('service') }}"><i class="ti-arrow-right"></i></a>
+                        <div class="position-re o-hidden img-grayscale item-inner">
+                            <img src="{{ url(Storage::url($service->image)) }}" alt="">
+                        </div>
+                        <div class="con">
+                            <h5 class="mb-5">{{ $service->title }}
+                            </h5>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="position-re o-hidden img-grayscale item-inner"> <img
-                                src="{{ asset('onepage-slider/img/FOR09600.jpg') }}" alt=""> </div>
-                        <div class="con"> <span class="category">
-                                <a href="{{ route('service') }}">Pre Wedding</a>
-                            </span>
-                            <h5><a href="{{ route('service') }}">Videography & Photography</a></h5> <a
-                                href="{{ route('service') }}"><i class="ti-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="position-re o-hidden img-grayscale item-inner"> <img
-                                src="{{ asset('onepage-slider/img/TP-236.jpg') }}" alt=""> </div>
-                        <div class="con"> <span class="category">
-                                <a href="{{ route('service') }}">Wedding</a>
-                            </span>
-                            <h5><a href="{{ route('service') }}">Videography & Photography</a></h5> <a
-                                href="{{ route('service') }}"><i class="ti-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="position-re o-hidden img-grayscale item-inner"> <img
-                                src="{{ asset('onepage-slider/img/services/1.jpg') }}" alt=""> </div>
-                        <div class="con"> <span class="category">
-                                <a href="{{ route('service') }}">Years Book</a>
-                            </span>
-                            <h5><a href="{{ route('service') }}">Photography</a></h5> <a
-                                href="{{ route('service') }}"><i class="ti-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="position-re o-hidden img-grayscale item-inner"> <img
-                                src="{{ asset('onepage-slider/img/services/1.jpg') }}" alt=""> </div>
-                        <div class="con"> <span class="category">
-                                <a href="{{ route('service') }}">Maternity</a>
-                            </span>
-                            <h5><a href="{{ route('service') }}">Videography & Photography</a></h5> <a
-                                href="{{ route('service') }}"><i class="ti-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="position-re o-hidden img-grayscale item-inner"> <img
-                                src="{{ asset('onepage-slider/img/services/1.jpg') }}" alt=""> </div>
-                        <div class="con"> <span class="category">
-                                <a href="{{ route('service') }}">Tedak Sinten</a>
-                            </span>
-                            <h5><a href="{{ route('service') }}">Videography & Photography</a></h5> <a
-                                href="{{ route('service') }}"><i class="ti-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="position-re o-hidden img-grayscale item-inner"> <img
-                                src="{{ asset('onepage-slider/img/services/2.jpg') }}" alt=""> </div>
-                        <div class="con"> <span class="category">
-                                <a href="{{ route('service') }}">Company Profile</a>
-                            </span>
-                            <h5><a href="{{ route('service') }}">Videography</a></h5> <a
-                                href="{{ route('service') }}"><i class="ti-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="position-re o-hidden img-grayscale item-inner"> <img
-                                src="{{ asset('onepage-slider/img/services/3.jpg') }}" alt=""> </div>
-                        <div class="con"> <span class="category">
-                                <a href="{{ route('service') }}">Travel</a>
-                            </span>
-                            <h5><a href="{{ route('service') }}">Photography</a></h5> <a
-                                href="{{ route('service') }}"><i class="ti-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="position-re o-hidden img-grayscale item-inner"> <img
-                                src="{{ asset('onepage-slider/img/services/4.jpg') }}" alt=""> </div>
-                        <div class="con"> <span class="category">
-                                <a href="{{ route('service') }}">Music Video</a>
-                            </span>
-                            <h5><a href="{{ route('service') }}">Videography</a></h5> <a
-                                href="{{ route('service') }}"><i class="ti-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="position-re o-hidden img-grayscale item-inner"> <img
-                                src="{{ asset('onepage-slider/img/services/5.jpg') }}" alt=""> </div>
-                        <div class="con"> <span class="category">
-                                <a href="{{ route('service') }}">Film</a>
-                            </span>
-                            <h5><a href="{{ route('service') }}">Videography</a></h5> <a
-                                href="{{ route('service') }}"><i class="ti-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="position-re o-hidden img-grayscale item-inner"> <img
-                                src="{{ asset('onepage-slider/img/services/6.jpg') }}" alt=""> </div>
-                        <div class="con"> <span class="category">
-                                <a href="{{ route('service') }}">Sport</a>
-                            </span>
-                            <h5><a href="{{ route('service') }}">Photography</a></h5> <a
-                                href="{{ route('service') }}"><i class="ti-arrow-right"></i></a>
-                        </div>
-                    </div>
+                    @endforeach
+                    @else
+                    <h5>Data is empty yet.</h5>
+                    @endif
                 </div>
             </div>
         </div>
@@ -240,162 +179,53 @@
             </div>
         </div>
         <hr style="border-top: 2px solid #2b2d42 !important;">
+        @foreach ($categories as $category)
+        @if ($category->portfolios->count())
         <div class="row">
             <div class="col-12">
-                <h2>Wedding</h2>
+                <h2>{{ $category->title }}</h2>
             </div>
         </div>
         <div class="row mb-30">
+            @foreach ($category->portfolios as $portfolio)
             <div class="col-md-4 gallery-item">
                 <div class="gallery-item-inner">
-                    <a href="{{ asset('onepage-slider/img/TP-236.jpg') }}" title="Model Photography"
+                    <a href="{{ url(Storage::url($portfolio->image)) }}" title="{{ $portfolio->title }}"
                         class="img-grayscale img-zoom">
                         <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ asset('onepage-slider/img/TP-236.jpg') }}"
+                            <div class="gallery-img"> <img src="{{ url(Storage::url($portfolio->image)) }}"
                                     class="img-fluid mx-auto d-block" alt=""> </div>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col-md-4 gallery-item">
-                <div class="gallery-item-inner">
-                    <a href="{{ asset('onepage-slider/img/FOR09600.jpg') }}" title="Model Photography"
-                        class="img-grayscale img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ asset('onepage-slider/img/FOR09600.jpg') }}"
-                                    class="img-fluid mx-auto d-block" alt=""> </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4 gallery-item">
-                <div class="gallery-item-inner">
-                    <a href="{{ asset('onepage-slider/img/gallery/02.jpg') }}" title="Wedding Photography"
-                        class="img-grayscale img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ asset('onepage-slider/img/gallery/02.jpg') }}"
-                                    class="img-fluid mx-auto d-block" alt=""> </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4 gallery-item">
-                <div class="gallery-item-inner">
-                    <a href="{{ asset('onepage-slider/img/price/engagement.jpg') }}" title="Portrait Photography"
-                        class="img-grayscale img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ asset('onepage-slider/img/price/engagement.jpg') }}"
-                                    class="img-fluid mx-auto d-block" alt=""> </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            @endforeach
         </div>
         <hr style="border-top: 2px solid #2b2d42 !important;">
+        @endif
+        @endforeach
+        @if ($embed_videos->count())
         <div class="row">
-            <div class="col-12">
-                <h2>Pre Wedding</h2>
+            <div class="col-md-12">
+                <div class="title mb-30"> <span>Gallery</span>
+                    <h2>Video</h2>
+                </div>
             </div>
         </div>
         <div class="row mb-30">
-            <div class="col-md-4 gallery-item">
-                <div class="gallery-item-inner">
-                    <a href="{{ asset('onepage-slider/img/gallery/04.jpg') }}" title="Travel Photography"
-                        class="img-grayscale img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ asset('onepage-slider/img/gallery/04.jpg') }}"
-                                    class="img-fluid mx-auto d-block" alt=""> </div>
-                        </div>
-                    </a>
+            @foreach ($embed_videos as $embed)
+            <div class="col-md-12">
+                <div class="embed-responsive embed-responsive-16by9 mb-5">
+                    <iframe class="embed-responsive-item" src="{{ $embed->embed_url }}" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
                 </div>
             </div>
-            <div class="col-md-4 gallery-item">
-                <div class="gallery-item-inner">
-                    <a href="{{ asset('onepage-slider/img/gallery/05.jpg') }}" title="Family Photography"
-                        class="img-grayscale img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ asset('onepage-slider/img/gallery/05.jpg') }}"
-                                    class="img-fluid mx-auto d-block" alt=""> </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4 gallery-item">
-                <div class="gallery-item-inner">
-                    <a href="{{ asset('onepage-slider/img/gallery/06.jpg') }}" title="Sport Photography"
-                        class="img-grayscale img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ asset('onepage-slider/img/gallery/06.jpg') }}"
-                                    class="img-fluid mx-auto d-block" alt=""> </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4 gallery-item">
-                <div class="gallery-item-inner">
-                    <a href="{{ asset('onepage-slider/img/gallery/07.jpg') }}" title="Portrait Photography"
-                        class="img-grayscale img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ asset('onepage-slider/img/gallery/07.jpg') }}"
-                                    class="img-fluid mx-auto d-block" alt=""> </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4 gallery-item">
-                <div class="gallery-item-inner">
-                    <a href="{{ asset('onepage-slider/img/gallery/08.jpg') }}" title="Product Photography"
-                        class="img-grayscale img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ asset('onepage-slider/img/gallery/08.jpg') }}"
-                                    class="img-fluid mx-auto d-block" alt=""> </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4 gallery-item">
-                <div class="gallery-item-inner">
-                    <a href="{{ asset('onepage-slider/img/gallery/09.jpg') }}" title="Still Life Photography"
-                        class="img-grayscale img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ asset('onepage-slider/img/gallery/09.jpg') }}"
-                                    class="img-fluid mx-auto d-block" alt=""> </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            @endforeach
         </div>
         <hr style="border-top: 2px solid #2b2d42 !important;">
-        <div class="row">
-            <div class="col-12">
-                <h2>Engagement</h2>
-            </div>
-        </div>
-        <div class="row mb-30">
-            <div class="col-md-4 gallery-item">
-                <div class="gallery-item-inner">
-                    <a href="{{ asset('onepage-slider/img/gallery/08.jpg') }}" title="Product Photography"
-                        class="img-grayscale img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ asset('onepage-slider/img/gallery/08.jpg') }}"
-                                    class="img-fluid mx-auto d-block" alt=""> </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4 gallery-item">
-                <div class="gallery-item-inner">
-                    <a href="{{ asset('onepage-slider/img/gallery/09.jpg') }}" title="Still Life Photography"
-                        class="img-grayscale img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ asset('onepage-slider/img/gallery/09.jpg') }}"
-                                    class="img-fluid mx-auto d-block" alt=""> </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <hr style="border-top: 2px solid #2b2d42 !important;">
+        @endif
     </div>
 </section>
 <!-- Testimonials -->
@@ -529,6 +359,7 @@
             </div>
         </div>
         <div class="row mb-30">
+            @foreach ($pricelists as $pricelist)
             <div class="col-md-12 gallery-item">
                 <div class="gallery-item-inner">
                     <a href="{{ asset('onepage-slider/img/price/engagement.jpg') }}"
@@ -540,53 +371,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-12 gallery-item">
-                <div class="gallery-item-inner">
-                    <a href="{{ asset('onepage-slider/img/price/PREWEDDING.jpg') }}"
-                        title="Pricing Pre Wedding Photography" class="img-grayscale img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ asset('onepage-slider/img/price/PREWEDDING.jpg') }}"
-                                    class="img-fluid mx-auto d-block" alt=""> </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-12 gallery-item">
-                <div class="gallery-item-inner">
-                    <a href="{{ asset('onepage-slider/img/price/PREWEDDING-VIDEO.jpg') }}"
-                        title="Pricing Pre Wedding Videography" class="img-grayscale img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img
-                                    src="{{ asset('onepage-slider/img/price/PREWEDDING-VIDEO.jpg') }}"
-                                    class="img-fluid mx-auto d-block" alt=""> </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-12 gallery-item">
-                <div class="gallery-item-inner">
-                    <a href="{{ asset('onepage-slider/img/price/wedding-photo.jpg') }}"
-                        title="Pricing Wedding Photography" class="img-grayscale img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img
-                                    src="{{ asset('onepage-slider/img/price/wedding-photo.jpg') }}"
-                                    class="img-fluid mx-auto d-block" alt=""> </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-12 gallery-item">
-                <div class="gallery-item-inner">
-                    <a href="{{ asset('onepage-slider/img/price/wedding-video.jpg') }}"
-                        title="Pricing Wedding Videography" class="img-grayscale img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img
-                                    src="{{ asset('onepage-slider/img/price/wedding-video.jpg') }}"
-                                    class="img-fluid mx-auto d-block" alt=""> </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>
@@ -603,44 +388,44 @@
             </div>
             <div class="col-md-5 info mb-30">
                 <p>I'd love to hear from you! Please fill out the form below or send a note directly with as much
-                    details as possible to our <a href="http://wa.me/6282329919955" target="_blank">Contact</a></p>
+                    details as possible to our <a href="http://wa.me/{{ $contact->whatsapp }}"
+                        target="_blank">Contact</a></p>
                 <div class="item">
-                    <p><b>Whatsapp</b> : <a href="http://wa.me/6282329919955" target="_blank">+62 823-2991-9955</a>
+                    <p><b>Whatsapp</b> : <a href="http://wa.me/{{ $contact->whatsapp }}"
+                            target="_blank">+{{ $contact->whatsapp }}</a>
                     </p>
                 </div>
                 <div class="item">
-                    <p><b>Address</b> : JL Sultan Hasanudin, RT 03 RW 02, Cabawan, Margadana, Cabawan, Tegal, Kota
-                        Tegal, Jawa Tengah 52147</p>
+                    <p><b>Address</b> : {{ $contact->address }}</p>
                 </div>
                 <div class="item">
-                    <p><b>Email</b> : twntypicture@gmail.com</p>
+                    <p><b>Email</b> : {{ $contact->email }}</p>
                 </div>
                 <div class="item">
-                    <p><b>Instagram</b> : <a href="https://www.instagram.com/twenty.picture/"
-                            target="_blank">twenty.picture</a></p>
+                    <p><b>Instagram</b> : <a href="https://www.instagram.com/{{ $contact->instagram }}/"
+                            target="_blank">{{ $contact->instagram }}</a></p>
                 </div>
                 <div class="item">
-                    <p><b>Google Map</b> : <a
-                            href="https://www.google.com/maps/place/Twenty+picture/@-6.8812713,109.0913649,19.5z/data=!4m19!1m13!4m12!1m3!2m2!1d109.0914787!2d-6.881067!1m6!1m2!1s0x2e6fbb30910362a9:0x6cfba4551de1a2be!2sTwenty+picture,+Jl.+Brigjen.+Slamet+Riaydi+No.78,+Cabawan,+Kec.+Margadana,+Kota+Tegal,+Jawa+Tengah+52147!2m2!1d109.091482!2d-6.88104!3e2!3m4!1s0x2e6fbb30910362a9:0x6cfba4551de1a2be!8m2!3d-6.88104!4d109.091482?hl=en"
-                            target="_blank">Get Directions</a>
+                    <p><b>Google Map</b> : <a href="{{ $contact->map_url }}" target="_blank">Get Directions</a>
                     </p>
                 </div>
             </div>
             <div class="col-md-5 offset-md-2">
                 <p><b>SEND A MESSAGE!</b></p>
-                <form method="post" class="row">
+                <form method="post" class="row" action="{{ route('message.store') }}">
+                    @csrf
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Name *" required> </div>
+                            <input name="name" type="text" class="form-control" placeholder="Name *" required> </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Email / Phone"> </div>
+                            <input name="phone" type="text" class="form-control" placeholder="Phone" required> </div>
                     </div>
                     <div class="col-sm-12">
                         <div class="form-group">
                             <textarea name="message" id="message" cols="30" rows="4" class="form-control"
-                                placeholder="Message"></textarea>
+                                placeholder="Message" required></textarea>
                         </div>
                     </div>
                     <div class="col-sm-12">
