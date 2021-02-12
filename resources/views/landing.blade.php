@@ -362,13 +362,24 @@
             @foreach ($pricelists as $pricelist)
             <div class="col-md-12 gallery-item">
                 <div class="gallery-item-inner">
-                    <a href="{{ asset('onepage-slider/img/price/engagement.jpg') }}"
-                        title="Pricing Engagement Videograpy & Photography" class="img-grayscale img-zoom">
+                    @if (App::environment('heroku'))
+                    <a href="{{ $pricelist->image }}" title="Pricing Engagement Videograpy & Photography"
+                        class="img-grayscale img-zoom">
                         <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ asset('onepage-slider/img/price/engagement.jpg') }}"
+                            <div class="gallery-img"> <img src="{{ $pricelist->image }}"
                                     class="img-fluid mx-auto d-block" alt=""> </div>
                         </div>
                     </a>
+                    @else
+                    <a href="{{ url(Storage::url($pricelist->image)) }}"
+                        title="Pricing Engagement Videograpy & Photography" class="img-grayscale img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="{{ url(Storage::url($pricelist->image)) }}"
+                                    class="img-fluid mx-auto d-block" alt=""> </div>
+                        </div>
+                    </a>
+                    @endif
+
                 </div>
             </div>
             @endforeach
