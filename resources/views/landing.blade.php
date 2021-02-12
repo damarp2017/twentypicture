@@ -45,59 +45,62 @@
     <div class="owl-carousel owl-theme">
         @if ($banners->count())
         @foreach ($banners as $banner)
-        <div class="item bg-img" data-overlay-dark="4"
-            data-background="{{ asset('onepage-slider/img/banner/gambardepan1.jpg') }}">
-            <div class="container text-center v-middle caption">
-                <img class="img-fluid mx-auto d-block" src="{{ asset('onepage-slider/img/twenty-logo.png') }}" alt=""
-                    style="width: 65%">
-                <h4 class="">MAKE DREAMS COME TRUE</h4>
-                <div class="mt-3">
-                    <a href="https://www.instagram.com/{{ $contact->instagram }}/" target="_blank"
-                        class="btn mr-2 ml-2 mt-2">
-                        <span>
-                            <i class="fab fa-instagram"></i>&nbsp;{{ $contact->instagram }}
-                        </span>
-                    </a>
-                    <a href="http://wa.me/{{ $contact->whatsapp }}" target="_blank" class="btn mr-2 ml-2 mt-2">
-                        <span>
-                            <i class="fab fa-whatsapp"></i>&nbsp;+{{ $contact->whatsapp }}
-                        </span>
-                    </a>
+        @if (App::environment('heroku'))
+        <div class="item bg-img" data-overlay-dark="4" data-background="{{ $banner->image }}">
+            @else
+            <div class="item bg-img" data-overlay-dark="4" data-background="{{ url(Storage::url($banner->image)) }}">
+                @endif
+                <div class="container text-center v-middle caption">
+                    <img class="img-fluid mx-auto d-block" src="{{ asset('onepage-slider/img/twenty-logo.png') }}"
+                        alt="" style="width: 65%">
+                    <h4 class="">MAKE DREAMS COME TRUE</h4>
+                    <div class="mt-3">
+                        <a href="https://www.instagram.com/{{ $contact->instagram }}/" target="_blank"
+                            class="btn mr-2 ml-2 mt-2">
+                            <span>
+                                <i class="fab fa-instagram"></i>&nbsp;{{ $contact->instagram }}
+                            </span>
+                        </a>
+                        <a href="http://wa.me/{{ $contact->whatsapp }}" target="_blank" class="btn mr-2 ml-2 mt-2">
+                            <span>
+                                <i class="fab fa-whatsapp"></i>&nbsp;+{{ $contact->whatsapp }}
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        @endforeach
-        @else
-        <section class="ready banner-padding bg-img" data-overlay-dark="8">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="container text-center v-middle caption">
-                            <img class="img-fluid mx-auto d-block"
-                                src="{{ asset('onepage-slider/img/twenty-logo.png') }}" alt="" style="width: 65%">
-                            <h4 class="">MAKE DREAMS COME TRUE</h4>
-                            <div class="mt-3">
-                                <a href="https://www.instagram.com/{{ $contact->instagram }}/" target="_blank"
-                                    class="btn mr-2 ml-2 mt-2">
-                                    <span>
-                                        <i class="fab fa-instagram"></i>&nbsp;{{ $contact->instagram }}
-                                    </span>
-                                </a>
-                                <a href="http://wa.me/{{ $contact->whatsapp }}" target="_blank"
-                                    class="btn mr-2 ml-2 mt-2">
-                                    <span>
-                                        <i class="fab fa-whatsapp"></i>&nbsp;+{{ $contact->whatsapp }}
-                                    </span>
-                                </a>
+            @endforeach
+            @else
+            <section class="ready banner-padding bg-img" data-overlay-dark="8">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="container text-center v-middle caption">
+                                <img class="img-fluid mx-auto d-block"
+                                    src="{{ asset('onepage-slider/img/twenty-logo.png') }}" alt="" style="width: 65%">
+                                <h4 class="">MAKE DREAMS COME TRUE</h4>
+                                <div class="mt-3">
+                                    <a href="https://www.instagram.com/{{ $contact->instagram }}/" target="_blank"
+                                        class="btn mr-2 ml-2 mt-2">
+                                        <span>
+                                            <i class="fab fa-instagram"></i>&nbsp;{{ $contact->instagram }}
+                                        </span>
+                                    </a>
+                                    <a href="http://wa.me/{{ $contact->whatsapp }}" target="_blank"
+                                        class="btn mr-2 ml-2 mt-2">
+                                        <span>
+                                            <i class="fab fa-whatsapp"></i>&nbsp;+{{ $contact->whatsapp }}
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        @endif
+            </section>
+            @endif
 
-    </div>
+        </div>
 </header>
 <!-- About -->
 <section id="about" class="about clear section-padding" data-scroll-index="1">
@@ -151,7 +154,11 @@
                     @foreach ($services as $service)
                     <div class="item">
                         <div class="position-re o-hidden img-grayscale item-inner">
+                            @if (App::environment('heroku'))
+                            <img src="{{ $service->image }}" alt="">
+                            @else
                             <img src="{{ url(Storage::url($service->image)) }}" alt="">
+                            @endif
                         </div>
                         <div class="con">
                             <h5 class="mb-5">{{ $service->title }}
@@ -190,6 +197,14 @@
             @foreach ($category->portfolios as $portfolio)
             <div class="col-md-4 gallery-item">
                 <div class="gallery-item-inner">
+                    @if (App::environment('heroku'))
+                    <a href="{{ $portfolio->image }}" title="{{ $portfolio->title }}" class="img-grayscale img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="{{ $portfolio->image }}"
+                                    class="img-fluid mx-auto d-block" alt=""> </div>
+                        </div>
+                    </a>
+                    @else
                     <a href="{{ url(Storage::url($portfolio->image)) }}" title="{{ $portfolio->title }}"
                         class="img-grayscale img-zoom">
                         <div class="gallery-box">
@@ -197,6 +212,8 @@
                                     class="img-fluid mx-auto d-block" alt=""> </div>
                         </div>
                     </a>
+                    @endif
+
                 </div>
             </div>
             @endforeach
