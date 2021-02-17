@@ -55,20 +55,27 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <p><b>Get in touch</b>twntypicture@gmail.com
-                        <br><a href="http://wa.me/6282329919955" target="_blank">+62 823-2991-9955</a></p>
+                    <p><b>Get in touch</b>{{ $contact->email }}
+                        <br><a href="http://wa.me/{{ $contact->whatsapp }}"
+                            target="_blank">+{{ $contact->whatsapp }}</a></p>
                 </div>
                 <div class="col-md-3">
-                    <p><b>Location</b>JL Sultan Hasanudin, RT 03 RW 02, Cabawan, Margadana, Cabawan,
-                        <br>Tegal, Kota Tegal, Jawa Tengah 52147</p>
+                    <p><b>Location</b>{{ $contact->address }}</p>
                 </div>
                 <div class="col-md-3">
                     <p class="mb-0"><b>FOLLOW US</b></p>
                     <ul class="footer-social-link">
-                        <li><a href="index.html#"><i class="ti-facebook"></i></a></li>
-                        <li><a href="https://www.instagram.com/twenty.picture/" target="_blank"><i
-                                    class="ti-instagram"></i></a></li>
-                        <li><a href="index.html#"><i class="ti-twitter"></i></a></li>
+                        <li><a href="#"><i class="ti-facebook"></i></a></li>
+                        <li>
+                            <a href="https://www.instagram.com/{{ $contact->instagram }}" target="_blank">
+                                <i class="ti-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC8Pg_GwwnGL-TgYmoy0EmUw" target="_blank">
+                                <i class="ti-youtube"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
