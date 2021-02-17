@@ -52,19 +52,7 @@ class ServiceController extends Controller
 
         $service = new Service();
         if (App::environment('heroku')) {
-            // $result = $request->file('image')->storeOnCloudinary('twentypicture/service', [
-            //     'transformation' => [
-            //         'quality' => 'auto',
-            //         'fetch_format' => 'auto'
-            //     ]
-            // ]);
-            $result = cloudinary()->upload($request->file('image'), [
-                'folder' => 'uploads',
-                'transformation' => [
-                    'quality' => 'auto',
-                    'fetch_format' => 'auto'
-                ]
-            ]);
+            $result = $request->file('image')->storeOnCloudinary('twentypicture/service');
             $path = $result->getSecurePath();
         } else {
             $path = Storage::putFile('public/image/service', $request->file('image'));
