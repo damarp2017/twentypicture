@@ -7,13 +7,13 @@
     <title>Twenty Picture</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;family=Pathway+Gothic+One&amp;family=Crimson+Text&family=Source+Sans+Pro:ital,wght@0,400;1,300&amp;family=Yanone+Kaffeesatz&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;family=Pathway+Gothic+One&amp;family=Crimson+Text&family=Source+Sans+Pro:ital,wght@0,400;1,300&amp;family=Yanone+Kaffeesatz&amp;family=Roboto+Slab&amp;display=swap"
         rel="stylesheet">
     {{-- <link
         href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Source+Sans+Pro:ital,wght@0,400;1,300&display=swap"
         rel="stylesheet"> --}}
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('onepage-slider/img/logo-putih.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('onepage-slider/img/logo-warna.png') }}">
     <link rel="stylesheet" href="{{ asset('onepage-slider/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('onepage-slider/css/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('onepage-slider/css/themify-icons.css') }}">

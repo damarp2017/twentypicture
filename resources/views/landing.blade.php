@@ -10,7 +10,8 @@
                 style="max-height: 35px; margin: 12px; margin-top: 8px" alt="">
         </a>
         <a href="">
-            <h3 class="logo text-white m-0">Twenty Picture</h3>
+            <h3 class="logo text-white m-0" style="font-family: 'Roboto Slab', serif; font-size: 18px">TWENTY PICTURE
+            </h3>
         </a>
         {{-- <a class="logo" href="{{ route('home') }}"> <img src="{{ asset('onepage-slider/img/twenty-logo.png') }}"
             alt="">
@@ -247,7 +248,7 @@
 </section>
 <!-- Testimonials -->
 <section id="testimonials" class="testimonials testimonials-padding bg-img" data-overlay-dark="3"
-    data-background="{{ asset('onepage-slider/img/banner.jpg') }}">
+    data-background="{{ asset('onepage-slider/img/caption.jpg') }}">
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
@@ -291,73 +292,92 @@
         <div class="row">
             <div class="col-md-12 owl-carousel owl-theme">
                 <div class="item">
-                    <div class="img img-grayscale item-inner"><img src="{{ asset('onepage-slider/img/team/6.png') }}"
-                            alt=""></div>
+                    <div class="img img-grayscale item-inner"><img
+                            src="{{ asset('onepage-slider/img/team/keribo-founder.jpg') }}" alt=""></div>
                     <div class="info">
-                        <h5>Mas Keribo</h5>
-                        <h6>Owner & Founder</h6>
-                        <div class="social valign">
+                        <h5>Keribo</h5>
+                        <h6>Owner, Founder, & Videographer</h6>
+                        {{-- <div class="social valign">
                             <div class="full-width"> <a href="#"><i class="ti-facebook"></i></a> <a href="#"><i
                                         class="ti-twitter"></i></a> <a href="#"><i class="ti-linkedin"></i></a>
                                 <p>info@danphoto.com</p>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="item">
-                    <div class="img img-grayscale item-inner"><img src="{{ asset('onepage-slider/img/team/3.jpg') }}"
-                            alt=""></div>
-                    <div class="info">
-                        <h5>Kopral Jono</h5>
-                        <h6>Admin</h6>
-                        <div class="social valign">
-                            <div class="full-width"> <a href="#"><i class="ti-facebook"></i></a> <a href="#"><i
-                                        class="ti-twitter"></i></a> <a href="#"><i class="ti-linkedin"></i></a>
-                                <p>info@danphoto.com</p>
-                            </div>
-                        </div>
+                    <div class="img img-grayscale item-inner"><img
+                            src="{{ asset('onepage-slider/img/team/bayu tri aji wicaksono-photographer.jpg') }}" alt="">
                     </div>
-                </div>
-                <div class="item">
-                    <div class="img img-grayscale item-inner"><img src="{{ asset('onepage-slider/img/team/1.jpg') }}"
-                            alt=""></div>
                     <div class="info">
-                        <h5>Bambang Pamungkas</h5>
+                        <h5>Bayu Tri Aji Wicaksono</h5>
                         <h6>Photographer</h6>
-                        <div class="social valign">
+                        {{-- <div class="social valign">
                             <div class="full-width"> <a href="#"><i class="ti-facebook"></i></a> <a href="#"><i
                                         class="ti-twitter"></i></a> <a href="#"><i class="ti-linkedin"></i></a>
                                 <p>info@danphoto.com</p>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="item">
-                    <div class="img img-grayscale item-inner"><img src="{{ asset('onepage-slider/img/team/5.png') }}"
-                            alt=""></div>
+                    <div class="img img-grayscale item-inner"><img
+                            src="{{ asset('onepage-slider/img/team/budi ardiantomo-photographer.jpg') }}" alt="">
+                    </div>
                     <div class="info">
-                        <h5>Nia Ramadhani</h5>
+                        <h5>Budi Ardiantomo</h5>
+                        <h6>Photographer</h6>
+                        {{-- <div class="social valign">
+                            <div class="full-width"> <a href="#"><i class="ti-facebook"></i></a> <a href="#"><i
+                                        class="ti-twitter"></i></a> <a href="#"><i class="ti-linkedin"></i></a>
+                                <p>info@danphoto.com</p>
+                            </div>
+                        </div> --}}
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img img-grayscale item-inner"><img
+                            src="{{ asset('onepage-slider/img/team/hanan-videographer.jpg') }}" alt="">
+                    </div>
+                    <div class="info">
+                        <h5>Hanan Dwi Wiranata</h5>
                         <h6>Videographer</h6>
-                        <div class="social valign">
+                        {{-- <div class="social valign">
                             <div class="full-width"> <a href="#"><i class="ti-facebook"></i></a> <a href="#"><i
                                         class="ti-twitter"></i></a> <a href="#"><i class="ti-linkedin"></i></a>
                                 <p>info@danphoto.com</p>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="item">
-                    <div class="img img-grayscale item-inner"><img src="{{ asset('onepage-slider/img/team/12.jpg') }}"
-                            alt=""></div>
+                    <div class="img img-grayscale item-inner"><img
+                            src="{{ asset('onepage-slider/img/team/marliyas arif-videographer.jpg') }}" alt="">
+                    </div>
                     <div class="info">
-                        <h5>Mario Balloteli</h5>
-                        <h6>Editing</h6>
-                        <div class="social valign">
+                        <h5>Marliyas Arif</h5>
+                        <h6>Videographer</h6>
+                        {{-- <div class="social valign">
                             <div class="full-width"> <a href="#"><i class="ti-facebook"></i></a> <a href="#"><i
                                         class="ti-twitter"></i></a> <a href="#"><i class="ti-linkedin"></i></a>
                                 <p>info@danphoto.com</p>
                             </div>
-                        </div>
+                        </div> --}}
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img img-grayscale item-inner"><img
+                            src="{{ asset('onepage-slider/img/team/deni romanov-editor.jpg') }}" alt="">
+                    </div>
+                    <div class="info">
+                        <h5>Deni Romanov</h5>
+                        <h6>Editor</h6>
+                        {{-- <div class="social valign">
+                            <div class="full-width"> <a href="#"><i class="ti-facebook"></i></a> <a href="#"><i
+                                        class="ti-twitter"></i></a> <a href="#"><i class="ti-linkedin"></i></a>
+                                <p>info@danphoto.com</p>
+                            </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
