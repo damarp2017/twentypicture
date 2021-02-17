@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Service;
-use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Storage;
@@ -54,7 +53,7 @@ class ServiceController extends Controller
         $service = new Service();
         if (App::environment('heroku')) {
             // $result = $request->file('image')->storeOnCloudinary('twentypicture/service');
-            $result = Cloudinary::upload($request->file('file')->getRealPath(), [
+            $result = cloudinary()->upload($request->file('image')->getRealPath(), [
                 "folder" => 'twentypicture/service',
                 "tranformation" => [
                     "quality" => '50'
