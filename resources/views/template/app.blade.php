@@ -34,11 +34,11 @@
 
 <body>
     <!-- Preloader -->
-    <div id="loader">
+    {{-- <div id="loader">
         <div class="loading">
             <div></div>
         </div>
-    </div>
+    </div> --}}
     @yield('content')
     <hr class="line-vr-section animate-box" data-animate-effect="fadeInUp">
     <!-- Footer -->
