@@ -55,9 +55,7 @@ class ServiceController extends Controller
             // $result = $request->file('image')->storeOnCloudinary('twentypicture/service');
             $result = cloudinary()->upload($request->file('image')->getRealPath(), [
                 "folder" => 'twentypicture/service',
-                "tranformation" => [
-                    "quality" => '50'
-                ]
+                "quality" => 'auto',
             ]);
 
             $path = $result->getSecurePath();
