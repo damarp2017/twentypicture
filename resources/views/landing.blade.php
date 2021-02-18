@@ -128,9 +128,9 @@
                     known from several circles. In late 2018, he began working with investors to build its photo and
                     videography business, until it changed its name to “Tickzup Studio” with management and new friends.
                     <br>Until mid-2019, several investors and their themes left “Tickzup Studio”. Even though some of
-                    his teams were left behind, <strong>Keribo</strong> continued his business with the help of several
-                    freelance photographers who were willing to help him until on February 20<sup>th</sup>, 2020, it
-                    changed its name to “Twenty Picture” until now.
+                    his teams were left behind, <strong>Keribo</strong> continues his business with his new team who are
+                    willing to be part of TWENTY PICTURE which has changed its name on February 20<sup>th</sup>, 2020
+                    until now.
                 </p>
             </div>
         </div>
