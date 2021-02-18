@@ -292,8 +292,8 @@
         <div class="row">
             <div class="col-md-12 owl-carousel owl-theme">
                 <div class="item">
-                    <div class="img img-grayscale item-inner"><img
-                            src="{{ asset('onepage-slider/img/team-original/keribo-founder.jpg') }}" alt=""></div>
+                    <div class="img img-grayscale"><img
+                            src="{{ asset('onepage-slider/img/team-circle/keribo-founder.png') }}" alt=""></div>
                     <div class="info">
                         <h5>Keribo</h5>
                         <h6>Owner, Founder, & Videographer</h6>
@@ -306,8 +306,8 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="img img-grayscale item-inner"><img
-                            src="{{ asset('onepage-slider/img/team-original/bayu tri aji wicaksono-photographer.jpg') }}"
+                    <div class="img img-grayscale"><img
+                            src="{{ asset('onepage-slider/img/team-circle/bayu tri aji wicaksono-photographer.png') }}"
                             alt="">
                     </div>
                     <div class="info">
@@ -322,9 +322,8 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="img img-grayscale item-inner"><img
-                            src="{{ asset('onepage-slider/img/team-original/budi ardiantomo-photographer.jpg') }}"
-                            alt="">
+                    <div class="img img-grayscale"><img
+                            src="{{ asset('onepage-slider/img/team-circle/budi ardiantomo-photographer.png') }}" alt="">
                     </div>
                     <div class="info">
                         <h5>Budi Ardiantomo</h5>
@@ -338,8 +337,8 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="img img-grayscale item-inner"><img
-                            src="{{ asset('onepage-slider/img/team-original/hanan-videographer.jpg') }}" alt="">
+                    <div class="img img-grayscale"><img
+                            src="{{ asset('onepage-slider/img/team-circle/hanan-videographer.png') }}" alt="">
                     </div>
                     <div class="info">
                         <h5>Hanan Dwi Wiranata</h5>
@@ -353,8 +352,8 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="img img-grayscale item-inner"><img
-                            src="{{ asset('onepage-slider/img/team-original/marliyas arif-videographer.jpg') }}" alt="">
+                    <div class="img img-grayscale"><img
+                            src="{{ asset('onepage-slider/img/team-circle/marliyas arif-videographer.png') }}" alt="">
                     </div>
                     <div class="info">
                         <h5>Marliyas Arif</h5>
@@ -368,8 +367,8 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="img img-grayscale item-inner"><img
-                            src="{{ asset('onepage-slider/img/team-original/deni romanov-editor.jpg') }}" alt="">
+                    <div class="img img-grayscale"><img
+                            src="{{ asset('onepage-slider/img/team-circle/deni romanov-editor.png') }}" alt="">
                     </div>
                     <div class="info">
                         <h5>Deni Romanov</h5>

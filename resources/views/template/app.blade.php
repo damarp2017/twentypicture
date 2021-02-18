@@ -65,7 +65,11 @@
                 <div class="col-md-3">
                     <p class="mb-0"><b>FOLLOW US</b></p>
                     <ul class="footer-social-link">
-                        <li><a href="#"><i class="ti-facebook"></i></a></li>
+                        <li>
+                            <a href="https://www.facebook.com/twentypicture" target="_blank">
+                                <i class="ti-facebook"></i>
+                            </a>
+                        </li>
                         <li>
                             <a href="https://www.instagram.com/{{ $contact->instagram }}" target="_blank">
                                 <i class="ti-instagram"></i>
