@@ -284,7 +284,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="title mb-30"> <span>Photographer</span>
+                <div class="title mb-30">
                     <h2>Awesome Team</h2>
                 </div>
             </div>
