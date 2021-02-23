@@ -381,6 +381,51 @@
                         </div> --}}
                     </div>
                 </div>
+                <div class="item">
+                    <div class="img img-grayscale"><img
+                            src="{{ asset('onepage-slider/img/team-circle/lidia-editor.png') }}" alt="">
+                    </div>
+                    <div class="info">
+                        <h5>Lidia</h5>
+                        <h6>Editor</h6>
+                        {{-- <div class="social valign">
+                            <div class="full-width"> <a href="#"><i class="ti-facebook"></i></a> <a href="#"><i
+                                        class="ti-twitter"></i></a> <a href="#"><i class="ti-linkedin"></i></a>
+                                <p>info@danphoto.com</p>
+                            </div>
+                        </div> --}}
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img img-grayscale"><img
+                            src="{{ asset('onepage-slider/img/team-circle/gita-admin.png') }}" alt="">
+                    </div>
+                    <div class="info">
+                        <h5>Gita</h5>
+                        <h6>Admin</h6>
+                        {{-- <div class="social valign">
+                            <div class="full-width"> <a href="#"><i class="ti-facebook"></i></a> <a href="#"><i
+                                        class="ti-twitter"></i></a> <a href="#"><i class="ti-linkedin"></i></a>
+                                <p>info@danphoto.com</p>
+                            </div>
+                        </div> --}}
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img img-grayscale"><img src="{{ asset('onepage-slider/img/team-circle/damar-it.png') }}"
+                            alt="">
+                    </div>
+                    <div class="info">
+                        <h5>Damar</h5>
+                        <h6>IT Support</h6>
+                        {{-- <div class="social valign">
+                            <div class="full-width"> <a href="#"><i class="ti-facebook"></i></a> <a href="#"><i
+                                        class="ti-twitter"></i></a> <a href="#"><i class="ti-linkedin"></i></a>
+                                <p>info@danphoto.com</p>
+                            </div>
+                        </div> --}}
+                    </div>
+                </div>
             </div>
         </div>
     </div>
