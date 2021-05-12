@@ -28,14 +28,14 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-// Route::get('/', [
-//     LandingController::class,
-//     'index'
-// ])->name('home');
+Route::get('/', [
+    LandingController::class,
+    'index'
+])->name('home');
 
-Route::get('/', function () {
-    return view('maintenance');
-})->name('home');
+// Route::get('/', function () {
+//     return view('maintenance');
+// })->name('home');
 
 // Route::get('service', function () {
 //     return view('service');
